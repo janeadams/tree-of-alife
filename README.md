@@ -16,3 +16,8 @@ The expectation is that data exists in `data/SummaryIndividuals.csv`.
 ```bash
 pipreqs  . --encoding=iso-8859-1 --ignore ".venv" --scan-notebooks
 ```
+
+In a perfect world, we could use `cugraph` to speed up NetworkX commands -- this requires CUDA to be installed. To get set up:
+- [Install CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+- [Install cugraph](https://github.com/rapidsai/cugraph)
+- Make sure to `export NETWORKX_AUTOMATIC_BACKENDS=cugraph`

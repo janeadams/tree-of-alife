@@ -1,6 +1,8 @@
 # Data
 *.zip
 data/
+figs/
+pickles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
