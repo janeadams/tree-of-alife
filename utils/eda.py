@@ -13,7 +13,7 @@ import plotly.io as pio
 pio.templates.default = "plotly_dark"
 config = {'displayModeBar': False}
 
-quantVars = ["lifeSpan", "speed", "maxEnergy", "kidEnergy", "sensors", "nkids", "pgmDeath", "successorCount", "predecessorCount"]#, "deathLuck"]
+quantVars = ["lifeSpan", "speed", "maxEnergy", "kidEnergy", "sensors", "nkids", "pgmDeath"]#, "successorCount", "predecessorCount"]#, "deathLuck"]
 colors = px.colors.qualitative.Plotly
 quantVarColors = dict(zip(quantVars, colors))
 
