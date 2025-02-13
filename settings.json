@@ -4,11 +4,11 @@
     "sample_type": "random",
     "sample_n_ancestors": 1,
     "max_lineages": 1000,
-    "max_lineage_length": 3000,
+    "max_lineage_length": 3003,
     "min_lineage_length": 100,
     "dedupe": true,
     "prek": 10,
-    "k": 5,
+    "k": 3,
     "pca": 2,
     "x": "pca1",
     "y": "pca2",
@@ -26,6 +26,7 @@
         "pgmDeath"
     ],
     "cluster_cols": [
+        "lifeSpan",
         "speed",
         "maxEnergy",
         "kidEnergy",
