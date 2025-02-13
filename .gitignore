@@ -1,4 +1,6 @@
+
 # Data
+*.csv
 *.zip
 data/
 figs/

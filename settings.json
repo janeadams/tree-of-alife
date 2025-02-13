@@ -1,0 +1,35 @@
+{
+    "prefetch_pool_size": "N/A",
+    "sample_size": 10000,
+    "sample_type": "random",
+    "sample_n_ancestors": 1,
+    "max_lineages": 1000,
+    "max_lineage_length": 3000,
+    "min_lineage_length": 100,
+    "dedupe": true,
+    "prek": 10,
+    "k": 5,
+    "pca": 2,
+    "x": "pca1",
+    "y": "pca2",
+    "z": "created",
+    "color": "lineage",
+    "size": "created",
+    "stat_cols": [
+        "created",
+        "lifeSpan",
+        "speed",
+        "maxEnergy",
+        "kidEnergy",
+        "sensors",
+        "nkids",
+        "pgmDeath"
+    ],
+    "cluster_cols": [
+        "speed",
+        "maxEnergy",
+        "kidEnergy",
+        "sensors",
+        "nkids"
+    ]
+}
