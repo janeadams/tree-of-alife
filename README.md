@@ -7,7 +7,13 @@
 
 ## Quick start
 
-The expectation is that data exists in `data/SummaryIndividuals.csv`.
+All settings are configured in `settings.json`, including the data path. Once you have [installed MongoDB Community](https://www.mongodb.com/docs/manual/installation/) and [Compass](https://www.mongodb.com/docs/compass/current/install/), you can run `00_build_database.ipynb` to build the database from your files. Make sure you have run `mongod` from the command line to restart MongoDB after a shutdown.
+
+Once the database is built, you can run `01_build_visualizations.ipynb` to walk through the data collection, transformation, and visualization steps. Note that there is caching built into this system, so you should be able to restart and rerun notebooks without transforming the data from the database all over again. Any time parameters are changed in `settings.json`, the transformation process will rerun from scratch.
+
+New figures will be stored in `tree/` under the parameters for that run. Old figures, including animations, from previous scripts are still in `figs/`. If you are curious how those were generated, you can find older code in `utils/_archive.zip` to save space. The bulk of the code currently used in the workflow is in `utils/utils.py`.
+
+The poster and exported documents are in `poster`. Again, older versions are archived in a zip file at `poster/_archive.zip` to save space.
 
 ## Development
 
@@ -16,8 +22,3 @@ The expectation is that data exists in `data/SummaryIndividuals.csv`.
 ```bash
 pipreqs  . --encoding=iso-8859-1 --ignore ".venv" --scan-notebooks
 ```
-
-In a perfect world, we could use `cugraph` to speed up NetworkX commands -- this requires CUDA to be installed. To get set up:
-- [Install CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-- [Install cugraph](https://github.com/rapidsai/cugraph)
-- Make sure to `export NETWORKX_AUTOMATIC_BACKENDS=cugraph`

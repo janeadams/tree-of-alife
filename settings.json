@@ -1,10 +1,11 @@
 {
+    "data_path": "data/20241229-compressed",
     "prefetch_pool_size": "N/A",
     "sample_size": 10000,
     "sample_type": "random",
     "sample_n_ancestors": 1,
     "max_lineages": 1000,
-    "max_lineage_length": 3003,
+    "max_lineage_length": 3000,
     "min_lineage_length": 100,
     "dedupe": true,
     "prek": 10,
